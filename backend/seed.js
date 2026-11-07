@@ -14,7 +14,7 @@ async function seed() {
   const userPw = await bcrypt.hash('User123', 12);
 
   const demoUsers = [
-    { name: 'Admin User', email: 'manishsingh626332@gmail.com', password: 'MAnish345', role: 'admin', points: 500, reportsSubmitted: 10, reportsResolved: 8 },
+    { name: 'Admin User', email: 'piyush626332@gmail.com', password: 'MAnish345', role: 'admin', points: 500, reportsSubmitted: 10, reportsResolved: 8 },
     { name: 'Ravi Kumar', email: 'citizen123@gmail.com', password: userPw, role: 'Citizen123', points: 120, reportsSubmitted: 6, reportsResolved: 2 },
     { name: 'Priya Sharma', email: 'officer123@gmail.com', password: 'Officer123', role: 'municipal_officer', points: 300, reportsSubmitted: 2, reportsResolved: 15 }
   ];
@@ -31,7 +31,7 @@ async function seed() {
     }
   }
 
-  const admin = createdUsers['manishsingh626332@gmail.com'];
+  const admin = createdUsers['piyush626332@gmail.com'];
   const citizen = createdUsers['citizen123@gmail.com'];
 
   // ✅ SAFE: Only insert sample reports if database has none
@@ -39,7 +39,7 @@ async function seed() {
   if (reportCount > 0) {
     console.log(`⏭️  Skipping reports — ${reportCount} already exist in database`);
     console.log('\n--- Demo login credentials ---');
-  console.log('  Admin: manishsingh626332@gmail.com / MAnish345');
+  console.log('  Admin: piyush626332@gmail.com / MAnish345');
   console.log('  Officer: officer123@gmail.com / Officer123');
   console.log('  Citizen: citizen123@gmail.com / Citizen123');
     console.log('------------------------------\n');
@@ -83,7 +83,7 @@ async function seed() {
   }
 
   console.log(`✅ ${reports.length} sample reports created`);
-  console.log('  Admin: manishsingh626332@gmail.com / MAnish345');
+  console.log('  Admin: piyush626332@gmail.com / MAnish345');
   console.log('  Officer: officer123@gmail.com / Officer123');
   console.log('  Citizen: citizen123@gmail.com / Citizen123');
   console.log(`  Reports: ${reports.length} sample reports`);
