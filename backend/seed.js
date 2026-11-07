@@ -10,7 +10,7 @@ async function seed() {
   console.log('Connected to MongoDB');
 
   // ✅ SAFE: Only create demo users if they don't already exist
-  const adminPw = await bcrypt.hash('MAnish345', 12);
+  const adminPw = await bcrypt.hash('Piyush345', 12);
   const userPw = await bcrypt.hash('User123', 12);
 
   const demoUsers = [
